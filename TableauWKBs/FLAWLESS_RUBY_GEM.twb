@@ -1,0 +1,681 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='FLAWLESS_RUBY_GEM_prices' inline='true' name='federated.0xv4g860hx3qqy13awui10kdu3ux' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='FLAWLESS_RUBY_GEM_prices' name='textscan.0d9ud5q018kk2n1ghj0wm1xeeq0i'>
+            <connection class='textscan' directory='C:/Users/Mash/Desktop/SkyblockInvestmentAnalysis' filename='FLAWLESS_RUBY_GEM_prices.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0d9ud5q018kk2n1ghj0wm1xeeq0i' name='FLAWLESS_RUBY_GEM_prices.csv' table='[FLAWLESS_RUBY_GEM_prices#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='datetime' name='Date' ordinal='0' />
+            <column datatype='real' name='Sell Price' ordinal='1' />
+            <column datatype='integer' name='Mayor_Aatrox' ordinal='2' />
+            <column datatype='integer' name='Mayor_Cole' ordinal='3' />
+            <column datatype='integer' name='Mayor_Derpy' ordinal='4' />
+            <column datatype='integer' name='Mayor_Diana' ordinal='5' />
+            <column datatype='integer' name='Mayor_Diaz' ordinal='6' />
+            <column datatype='integer' name='Mayor_Finnegan' ordinal='7' />
+            <column datatype='integer' name='Mayor_Foxy' ordinal='8' />
+            <column datatype='integer' name='Mayor_Jerry' ordinal='9' />
+            <column datatype='integer' name='Mayor_Marina' ordinal='10' />
+            <column datatype='integer' name='Mayor_Paul' ordinal='11' />
+            <column datatype='integer' name='Mayor_Scorpius' ordinal='12' />
+            <column datatype='real' name='Price_Change_Percent' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sell Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sell Price]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Sell Price</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Aatrox</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Aatrox]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Aatrox</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Cole</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Cole]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Cole</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Derpy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Derpy]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Derpy</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Diana</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Diana]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Diana</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Diaz</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Diaz]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Diaz</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Finnegan</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Finnegan]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Finnegan</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Foxy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Foxy]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Foxy</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Jerry</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Jerry]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Jerry</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Marina</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Marina]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Marina</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Paul</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Paul]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Paul</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Scorpius</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Scorpius]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Mayor_Scorpius</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price_Change_Percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price_Change_Percent]</local-name>
+            <parent-name>[FLAWLESS_RUBY_GEM_prices.csv]</parent-name>
+            <remote-alias>Price_Change_Percent</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Mayor Aatrox' datatype='integer' name='[Mayor_Aatrox]' role='measure' type='quantitative' />
+      <column caption='Mayor Cole' datatype='integer' name='[Mayor_Cole]' role='measure' type='quantitative' />
+      <column caption='Mayor Derpy' datatype='integer' name='[Mayor_Derpy]' role='measure' type='quantitative' />
+      <column caption='Mayor Diana' datatype='integer' name='[Mayor_Diana]' role='measure' type='quantitative' />
+      <column caption='Mayor Diaz' datatype='integer' name='[Mayor_Diaz]' role='measure' type='quantitative' />
+      <column caption='Mayor Finnegan' datatype='integer' name='[Mayor_Finnegan]' role='measure' type='quantitative' />
+      <column caption='Mayor Foxy' datatype='integer' name='[Mayor_Foxy]' role='measure' type='quantitative' />
+      <column caption='Mayor Jerry' datatype='integer' name='[Mayor_Jerry]' role='measure' type='quantitative' />
+      <column caption='Mayor Marina' datatype='integer' name='[Mayor_Marina]' role='measure' type='quantitative' />
+      <column caption='Mayor Paul' datatype='integer' name='[Mayor_Paul]' role='measure' type='quantitative' />
+      <column caption='Mayor Scorpius' datatype='integer' name='[Mayor_Scorpius]' role='measure' type='quantitative' />
+      <column caption='Price Change Percent' datatype='real' name='[Price_Change_Percent]' role='measure' type='quantitative' />
+      <column caption='FLAWLESS_RUBY_GEM_prices.csv' datatype='table' name='[__tableau_internal_object_id__].[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Mash/AppData/Local/Temp/TableauTemp/#TableauTemp_1mj0wr60x8jule1b1wwrg1ahn1y6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/17/2025 07:04:15 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4052</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sell Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sell Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sell Price</remote-alias>
+              <ordinal>1</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3088</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Aatrox</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Aatrox]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Aatrox</remote-alias>
+              <ordinal>2</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Cole</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Cole]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Cole</remote-alias>
+              <ordinal>3</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Derpy</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Derpy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Derpy</remote-alias>
+              <ordinal>4</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Diana</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Diana]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Diana</remote-alias>
+              <ordinal>5</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Diaz</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Diaz]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Diaz</remote-alias>
+              <ordinal>6</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Finnegan</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Finnegan]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Finnegan</remote-alias>
+              <ordinal>7</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Foxy</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Foxy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Foxy</remote-alias>
+              <ordinal>8</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Jerry</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Jerry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Jerry</remote-alias>
+              <ordinal>9</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Marina</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Marina]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Marina</remote-alias>
+              <ordinal>10</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Paul</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Paul]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Paul</remote-alias>
+              <ordinal>11</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Scorpius</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Scorpius]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Scorpius</remote-alias>
+              <ordinal>12</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price_Change_Percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Price_Change_Percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price_Change_Percent</remote-alias>
+              <ordinal>13</ordinal>
+              <family>FLAWLESS_RUBY_GEM_prices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1134</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='FLAWLESS_RUBY_GEM_prices.csv' id='FLAWLESS_RUBY_GEM_prices.csv_DDEF3247FFD14BF887C3F59B01E77696'>
+            <properties context=''>
+              <relation connection='textscan.0d9ud5q018kk2n1ghj0wm1xeeq0i' name='FLAWLESS_RUBY_GEM_prices.csv' table='[FLAWLESS_RUBY_GEM_prices#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='datetime' name='Date' ordinal='0' />
+                  <column datatype='real' name='Sell Price' ordinal='1' />
+                  <column datatype='integer' name='Mayor_Aatrox' ordinal='2' />
+                  <column datatype='integer' name='Mayor_Cole' ordinal='3' />
+                  <column datatype='integer' name='Mayor_Derpy' ordinal='4' />
+                  <column datatype='integer' name='Mayor_Diana' ordinal='5' />
+                  <column datatype='integer' name='Mayor_Diaz' ordinal='6' />
+                  <column datatype='integer' name='Mayor_Finnegan' ordinal='7' />
+                  <column datatype='integer' name='Mayor_Foxy' ordinal='8' />
+                  <column datatype='integer' name='Mayor_Jerry' ordinal='9' />
+                  <column datatype='integer' name='Mayor_Marina' ordinal='10' />
+                  <column datatype='integer' name='Mayor_Paul' ordinal='11' />
+                  <column datatype='integer' name='Mayor_Scorpius' ordinal='12' />
+                  <column datatype='real' name='Price_Change_Percent' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='FLAWLESS_RUBY_GEM_prices' name='federated.0xv4g860hx3qqy13awui10kdu3ux' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0xv4g860hx3qqy13awui10kdu3ux'>
+            <column datatype='datetime' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Mayor Derpy' datatype='integer' name='[Mayor_Derpy]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sell Price]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mayor_Derpy]' derivation='Sum' name='[sum:Mayor_Derpy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sell Price]' derivation='Sum' name='[sum:Sell Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0xv4g860hx3qqy13awui10kdu3ux].[none:Date:qk]' field-type='quantitative' max='#2025-10-31 04:06:50.970#' min='#2025-09-04 07:29:15.605#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0xv4g860hx3qqy13awui10kdu3ux].[sum:Sell Price:qk]' field-type='quantitative' max='1578333.5026493033' min='1406495.9762416701' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0xv4g860hx3qqy13awui10kdu3ux].[sum:Mayor_Derpy:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0xv4g860hx3qqy13awui10kdu3ux].[sum:Sell Price:qk]</rows>
+        <cols>[federated.0xv4g860hx3qqy13awui10kdu3ux].[none:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{D4EEE70B-DA22-4F85-8D0E-DF505BFC532E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0xv4g860hx3qqy13awui10kdu3ux].[sum:Mayor_Derpy:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0xv4g860hx3qqy13awui10kdu3ux].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{727BA850-E5D4-4D95-A931-C1A465C5B0B9}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

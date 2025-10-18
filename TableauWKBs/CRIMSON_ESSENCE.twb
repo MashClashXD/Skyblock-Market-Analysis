@@ -1,0 +1,764 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ESSENCE_CRIMSON_prices' inline='true' name='federated.035nkrd1n74byl1g1ds5n1odc7x3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ESSENCE_CRIMSON_prices' name='textscan.1m9e15s05c7rxp1585sex06fmh5u'>
+            <connection class='textscan' directory='C:/Users/Mash/Desktop/SkyblockInvestmentAnalysis' filename='ESSENCE_CRIMSON_prices.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1m9e15s05c7rxp1585sex06fmh5u' name='ESSENCE_CRIMSON_prices.csv' table='[ESSENCE_CRIMSON_prices#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='datetime' name='Date' ordinal='0' />
+            <column datatype='real' name='Sell Price' ordinal='1' />
+            <column datatype='integer' name='Mayor_Aatrox' ordinal='2' />
+            <column datatype='integer' name='Mayor_Cole' ordinal='3' />
+            <column datatype='integer' name='Mayor_Diana' ordinal='4' />
+            <column datatype='integer' name='Mayor_Diaz' ordinal='5' />
+            <column datatype='integer' name='Mayor_Jerry' ordinal='6' />
+            <column datatype='integer' name='Mayor_Marina' ordinal='7' />
+            <column datatype='integer' name='Mayor_Paul' ordinal='8' />
+            <column datatype='real' name='Price_Change_Percent' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sell Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sell Price]</local-name>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias>Sell Price</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Aatrox</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Aatrox]</local-name>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias>Mayor_Aatrox</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Cole</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Cole]</local-name>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias>Mayor_Cole</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Diana</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Diana]</local-name>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias>Mayor_Diana</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Diaz</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Diaz]</local-name>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias>Mayor_Diaz</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Jerry</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Jerry]</local-name>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias>Mayor_Jerry</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Marina</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Marina]</local-name>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias>Mayor_Marina</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Paul</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Paul]</local-name>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias>Mayor_Paul</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price_Change_Percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price_Change_Percent]</local-name>
+            <parent-name>[ESSENCE_CRIMSON_prices.csv]</parent-name>
+            <remote-alias>Price_Change_Percent</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='+10% of SMA' datatype='real' name='[90% of SMA (copy)_1645784254120374275]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation1]*1.1'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='SMA_1WEEK' datatype='real' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Sell Price]), -168, 0)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='90% of SMA' datatype='real' name='[Calculation_1645784254120226818]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation1]*0.9'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Mayor Aatrox' datatype='integer' name='[Mayor_Aatrox]' role='measure' type='quantitative' />
+      <column caption='Mayor Cole' datatype='integer' name='[Mayor_Cole]' role='measure' type='quantitative' />
+      <column caption='Mayor Diana' datatype='integer' name='[Mayor_Diana]' role='measure' type='quantitative' />
+      <column caption='Mayor Diaz' datatype='integer' name='[Mayor_Diaz]' role='measure' type='quantitative' />
+      <column caption='Mayor Jerry' datatype='integer' name='[Mayor_Jerry]' role='measure' type='quantitative' />
+      <column caption='Mayor Marina' datatype='integer' name='[Mayor_Marina]' role='measure' type='quantitative' />
+      <column caption='Mayor Paul' datatype='integer' name='[Mayor_Paul]' role='measure' type='quantitative' />
+      <column caption='Price Change Percent' datatype='real' name='[Price_Change_Percent]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Sell Price]' role='measure' type='quantitative' />
+      <column caption='ESSENCE_CRIMSON_prices.csv' datatype='table' name='[__tableau_internal_object_id__].[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mayor_Aatrox]' derivation='Sum' name='[sum:Mayor_Aatrox:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mayor_Cole]' derivation='Sum' name='[sum:Mayor_Cole:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mayor_Diana]' derivation='Sum' name='[sum:Mayor_Diana:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mayor_Diaz]' derivation='Sum' name='[sum:Mayor_Diaz:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mayor_Jerry]' derivation='Sum' name='[sum:Mayor_Jerry:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mayor_Marina]' derivation='Sum' name='[sum:Mayor_Marina:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Mayor_Paul]' derivation='Sum' name='[sum:Mayor_Paul:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Price_Change_Percent]' derivation='Sum' name='[sum:Price_Change_Percent:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sell Price]' derivation='Sum' name='[sum:Sell Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[90% of SMA (copy)_1645784254120374275]' derivation='User' name='[usr:90% of SMA (copy)_1645784254120374275:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+        <table-calc field='[federated.035nkrd1n74byl1g1ds5n1odc7x3].[Calculation1]' ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation_1645784254120226818]' derivation='User' name='[usr:Calculation_1645784254120226818:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+        <table-calc field='[federated.035nkrd1n74byl1g1ds5n1odc7x3].[Calculation1]' ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Sell Price]' derivation='Sum' name='[win:sum:Sell Price:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-168' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Mash/AppData/Local/Temp/TableauTemp/#TableauTemp_0y8mr5506yuylz14t8vbs09kzsf9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/18/2025 07:04:11 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>ESSENCE_CRIMSON_prices.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>888</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sell Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sell Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sell Price</remote-alias>
+              <ordinal>1</ordinal>
+              <family>ESSENCE_CRIMSON_prices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>701</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Aatrox</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Aatrox]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Aatrox</remote-alias>
+              <ordinal>2</ordinal>
+              <family>ESSENCE_CRIMSON_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Cole</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Cole]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Cole</remote-alias>
+              <ordinal>3</ordinal>
+              <family>ESSENCE_CRIMSON_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Diana</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Diana]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Diana</remote-alias>
+              <ordinal>4</ordinal>
+              <family>ESSENCE_CRIMSON_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Diaz</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Diaz]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Diaz</remote-alias>
+              <ordinal>5</ordinal>
+              <family>ESSENCE_CRIMSON_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Jerry</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Jerry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Jerry</remote-alias>
+              <ordinal>6</ordinal>
+              <family>ESSENCE_CRIMSON_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Marina</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Marina]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Marina</remote-alias>
+              <ordinal>7</ordinal>
+              <family>ESSENCE_CRIMSON_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Paul</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Paul]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Paul</remote-alias>
+              <ordinal>8</ordinal>
+              <family>ESSENCE_CRIMSON_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price_Change_Percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Price_Change_Percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price_Change_Percent</remote-alias>
+              <ordinal>9</ordinal>
+              <family>ESSENCE_CRIMSON_prices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>288</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[usr:Calculation1:qk]&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[win:sum:Sell Price:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[__tableau_internal_object_id__].[cnt:ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[sum:Mayor_Diaz:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[usr:90\% of SMA (copy)_1645784254120374275:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[sum:Price_Change_Percent:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[sum:Mayor_Jerry:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[sum:Mayor_Aatrox:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[sum:Mayor_Marina:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[sum:Sell Price:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[sum:Mayor_Paul:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[sum:Mayor_Cole:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[usr:Calculation_1645784254120226818:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[sum:Mayor_Diana:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='ESSENCE_CRIMSON_prices.csv' id='ESSENCE_CRIMSON_prices.csv_75F92BEB1638419485D24DF10629E3D4'>
+            <properties context=''>
+              <relation connection='textscan.1m9e15s05c7rxp1585sex06fmh5u' name='ESSENCE_CRIMSON_prices.csv' table='[ESSENCE_CRIMSON_prices#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='datetime' name='Date' ordinal='0' />
+                  <column datatype='real' name='Sell Price' ordinal='1' />
+                  <column datatype='integer' name='Mayor_Aatrox' ordinal='2' />
+                  <column datatype='integer' name='Mayor_Cole' ordinal='3' />
+                  <column datatype='integer' name='Mayor_Diana' ordinal='4' />
+                  <column datatype='integer' name='Mayor_Diaz' ordinal='5' />
+                  <column datatype='integer' name='Mayor_Jerry' ordinal='6' />
+                  <column datatype='integer' name='Mayor_Marina' ordinal='7' />
+                  <column datatype='integer' name='Mayor_Paul' ordinal='8' />
+                  <column datatype='real' name='Price_Change_Percent' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Crimson Essence Price (with 1 WEEK moving AVG)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ESSENCE_CRIMSON_prices' name='federated.035nkrd1n74byl1g1ds5n1odc7x3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.035nkrd1n74byl1g1ds5n1odc7x3'>
+            <column caption='+10% of SMA' datatype='real' name='[90% of SMA (copy)_1645784254120374275]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation1]*1.1'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='SMA_1WEEK' datatype='real' name='[Calculation1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([Sell Price]), -168, 0)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='90% of SMA' datatype='real' name='[Calculation_1645784254120226818]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Calculation1]*0.9'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='datetime' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Sell Price]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sell Price]' derivation='Sum' name='[sum:Sell Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[90% of SMA (copy)_1645784254120374275]' derivation='User' name='[usr:90% of SMA (copy)_1645784254120374275:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.035nkrd1n74byl1g1ds5n1odc7x3].[Calculation1]' ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation_1645784254120226818]' derivation='User' name='[usr:Calculation_1645784254120226818:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.035nkrd1n74byl1g1ds5n1odc7x3].[Calculation1]' ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.035nkrd1n74byl1g1ds5n1odc7x3].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[usr:90\% of SMA (copy)_1645784254120374275:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[usr:Calculation_1645784254120226818:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[usr:Calculation1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.035nkrd1n74byl1g1ds5n1odc7x3].[sum:Sell Price:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.035nkrd1n74byl1g1ds5n1odc7x3].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.035nkrd1n74byl1g1ds5n1odc7x3].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.035nkrd1n74byl1g1ds5n1odc7x3].[Multiple Values]</rows>
+        <cols>[federated.035nkrd1n74byl1g1ds5n1odc7x3].[none:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{6A8E44E3-14C8-4D95-BD57-57D6C305F601}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.035nkrd1n74byl1g1ds5n1odc7x3].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.035nkrd1n74byl1g1ds5n1odc7x3].[:Measure Names]</field>
+            <field>[federated.035nkrd1n74byl1g1ds5n1odc7x3].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{CADFE167-7A87-4940-A3B8-D4581A5EF6BA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

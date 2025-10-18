@@ -1,0 +1,719 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='GOLDEN_FRAGMENT_prices' inline='true' name='federated.02wqshq1qt62q61buhi0c03g64no' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='GOLDEN_FRAGMENT_prices' name='textscan.0ecq2kw1bj0at0122jot20826knd'>
+            <connection class='textscan' cleaning='yes' compat='no' csvFile='C:\Users\Mash\Documents\My Tableau Repository\Datasources\GOLDEN_FRAGMENT_prices.csv' dataRefreshTime='' directory='C:/Users/Mash/Documents/My Tableau Repository/Datasources' filename='C:/Users/Mash/AppData/Local/Temp/TableauTemp/0u6op4w02fg7hp1faq5dz1dw7r1a/GOLDEN_FRAGMENT_prices.csv.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ecq2kw1bj0at0122jot20826knd' name='GOLDEN_FRAGMENT_prices.csv' table='[C:\Users\Mash\Documents\My Tableau Repository\Datasources\GOLDEN_FRAGMENT_prices#csv]' type='table'>
+          <columns character-set='UTF-8' gridOrigin='A1:M1854:no:A1:M1854:1' header='yes' locale='en_CA' separator=','>
+            <column datatype='datetime' name='Date' ordinal='0' />
+            <column datatype='real' name='Sell Price' ordinal='1' />
+            <column datatype='integer' name='Mayor_Aatrox' ordinal='2' />
+            <column datatype='integer' name='Mayor_Cole' ordinal='3' />
+            <column datatype='integer' name='Mayor_Derpy' ordinal='4' />
+            <column datatype='integer' name='Mayor_Diana' ordinal='5' />
+            <column datatype='integer' name='Mayor_Diaz' ordinal='6' />
+            <column datatype='integer' name='Mayor_Finnegan' ordinal='7' />
+            <column datatype='integer' name='Mayor_Foxy' ordinal='8' />
+            <column datatype='integer' name='Mayor_Jerry' ordinal='9' />
+            <column datatype='integer' name='Mayor_Marina' ordinal='10' />
+            <column datatype='integer' name='Mayor_Paul' ordinal='11' />
+            <column datatype='integer' name='Mayor_Scorpius' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:M1854:no:A1:M1854:1&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sell Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sell Price]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Sell Price</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Aatrox</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Aatrox]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Aatrox</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Cole</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Cole]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Cole</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Derpy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Derpy]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Derpy</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Diana</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Diana]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Diana</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Diaz</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Diaz]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Diaz</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Finnegan</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Finnegan]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Finnegan</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Foxy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Foxy]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Foxy</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Jerry</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Jerry]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Jerry</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Marina</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Marina]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Marina</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Paul</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Paul]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Paul</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mayor_Scorpius</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mayor_Scorpius]</local-name>
+            <parent-name>[GOLDEN_FRAGMENT_prices.csv]</parent-name>
+            <remote-alias>Mayor_Scorpius</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Mayor Aatrox' datatype='integer' name='[Mayor_Aatrox]' role='measure' type='quantitative' />
+      <column caption='Mayor Cole' datatype='integer' name='[Mayor_Cole]' role='measure' type='quantitative' />
+      <column caption='Mayor Derpy' datatype='integer' name='[Mayor_Derpy]' role='measure' type='quantitative' />
+      <column caption='Mayor Diana' datatype='integer' name='[Mayor_Diana]' role='measure' type='quantitative' />
+      <column caption='Mayor Diaz' datatype='integer' name='[Mayor_Diaz]' role='measure' type='quantitative' />
+      <column caption='Mayor Finnegan' datatype='integer' name='[Mayor_Finnegan]' role='measure' type='quantitative' />
+      <column caption='Mayor Foxy' datatype='integer' name='[Mayor_Foxy]' role='measure' type='quantitative' />
+      <column caption='Mayor Jerry' datatype='integer' name='[Mayor_Jerry]' role='measure' type='quantitative' />
+      <column caption='Mayor Marina' datatype='integer' name='[Mayor_Marina]' role='measure' type='quantitative' />
+      <column caption='Mayor Paul' datatype='integer' name='[Mayor_Paul]' role='measure' type='quantitative' />
+      <column caption='Mayor Scorpius' datatype='integer' name='[Mayor_Scorpius]' role='measure' type='quantitative' />
+      <column caption='GOLDEN_FRAGMENT_prices.csv' datatype='table' name='[__tableau_internal_object_id__].[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Mash/AppData/Local/Temp/TableauTemp/#TableauTemp_0ww6i3x1u4rdnh18khk240itpo89.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/17/2025 05:36:04 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1853</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sell Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sell Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sell Price</remote-alias>
+              <ordinal>1</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1363</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Aatrox</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Aatrox]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Aatrox</remote-alias>
+              <ordinal>2</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Cole</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Cole]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Cole</remote-alias>
+              <ordinal>3</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Derpy</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Derpy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Derpy</remote-alias>
+              <ordinal>4</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Diana</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Diana]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Diana</remote-alias>
+              <ordinal>5</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Diaz</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Diaz]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Diaz</remote-alias>
+              <ordinal>6</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Finnegan</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Finnegan]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Finnegan</remote-alias>
+              <ordinal>7</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Foxy</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Foxy]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Foxy</remote-alias>
+              <ordinal>8</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Jerry</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Jerry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Jerry</remote-alias>
+              <ordinal>9</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Marina</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Marina]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Marina</remote-alias>
+              <ordinal>10</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Paul</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Paul]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Paul</remote-alias>
+              <ordinal>11</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Mayor_Scorpius</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Mayor_Scorpius]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Mayor_Scorpius</remote-alias>
+              <ordinal>12</ordinal>
+              <family>GOLDEN_FRAGMENT_prices.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='1000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='GOLDEN_FRAGMENT_prices.csv' id='GOLDEN_FRAGMENT_prices.csv_E14D9A300A134100A5349B4FD02FE438'>
+            <properties context=''>
+              <relation connection='textscan.0ecq2kw1bj0at0122jot20826knd' name='GOLDEN_FRAGMENT_prices.csv' table='[C:\Users\Mash\Documents\My Tableau Repository\Datasources\GOLDEN_FRAGMENT_prices#csv]' type='table'>
+                <columns character-set='UTF-8' gridOrigin='A1:M1854:no:A1:M1854:1' header='yes' locale='en_CA' separator=','>
+                  <column datatype='datetime' name='Date' ordinal='0' />
+                  <column datatype='real' name='Sell Price' ordinal='1' />
+                  <column datatype='integer' name='Mayor_Aatrox' ordinal='2' />
+                  <column datatype='integer' name='Mayor_Cole' ordinal='3' />
+                  <column datatype='integer' name='Mayor_Derpy' ordinal='4' />
+                  <column datatype='integer' name='Mayor_Diana' ordinal='5' />
+                  <column datatype='integer' name='Mayor_Diaz' ordinal='6' />
+                  <column datatype='integer' name='Mayor_Finnegan' ordinal='7' />
+                  <column datatype='integer' name='Mayor_Foxy' ordinal='8' />
+                  <column datatype='integer' name='Mayor_Jerry' ordinal='9' />
+                  <column datatype='integer' name='Mayor_Marina' ordinal='10' />
+                  <column datatype='integer' name='Mayor_Paul' ordinal='11' />
+                  <column datatype='integer' name='Mayor_Scorpius' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sell Price vs Date</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GOLDEN_FRAGMENT_prices' name='federated.02wqshq1qt62q61buhi0c03g64no' />
+          </datasources>
+          <datasource-dependencies datasource='federated.02wqshq1qt62q61buhi0c03g64no'>
+            <column datatype='datetime' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Mayor Diaz' datatype='integer' name='[Mayor_Diaz]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Sell Price]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mayor_Diaz]' derivation='Sum' name='[sum:Mayor_Diaz:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sell Price]' derivation='Sum' name='[sum:Sell Price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.02wqshq1qt62q61buhi0c03g64no].[none:Date:qk]' field-type='quantitative' max='#2025-08-26 18:43:24.895#' min='#2024-07-18 22:57:11.104#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.02wqshq1qt62q61buhi0c03g64no].[sum:Sell Price:qk]' field-type='quantitative' max='47467412.83408235' min='-6268943.4250105945' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.02wqshq1qt62q61buhi0c03g64no].[sum:Mayor_Diaz:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.02wqshq1qt62q61buhi0c03g64no].[sum:Sell Price:qk]</rows>
+        <cols>[federated.02wqshq1qt62q61buhi0c03g64no].[none:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{166102F3-CC8B-49C9-A45B-3A050F8321BB}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.02wqshq1qt62q61buhi0c03g64no].[sum:Mayor_Diaz:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.02wqshq1qt62q61buhi0c03g64no].[:Measure Names]</field>
+            <field>[federated.02wqshq1qt62q61buhi0c03g64no].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{63B583DB-7984-41DF-BD67-D87647F4BDF0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
