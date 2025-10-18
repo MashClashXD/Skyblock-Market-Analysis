@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='BOOSTER_COOKIE_prices' inline='true' name='federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BOOSTER_COOKIE_prices' name='textscan.193va9i0feuqfr1dsb5kw1qi9kmw'>
+            <connection class='textscan' directory='C:/Users/Mash/Downloads' filename='BOOSTER_COOKIE_prices.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.193va9i0feuqfr1dsb5kw1qi9kmw' name='BOOSTER_COOKIE_prices.csv' table='[BOOSTER_COOKIE_prices#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='datetime' name='Date' ordinal='0' />
+            <column datatype='real' name='Sell Price' ordinal='1' />
+            <column datatype='real' name='Weekly Moving Average' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[BOOSTER_COOKIE_prices.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[BOOSTER_COOKIE_prices.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sell Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sell Price]</local-name>
+            <parent-name>[BOOSTER_COOKIE_prices.csv]</parent-name>
+            <remote-alias>Sell Price</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weekly Moving Average</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Weekly Moving Average]</local-name>
+            <parent-name>[BOOSTER_COOKIE_prices.csv]</parent-name>
+            <remote-alias>Weekly Moving Average</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='SMA1WEEK' datatype='real' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Sell Price]), -168, 0)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='SMA5' datatype='real' name='[Calculation2]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Sell Price]), -5, 0)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='SMA20' datatype='real' name='[Calculation3]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Sell Price]), -20, 0)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='SMA1DAY' datatype='real' name='[Calculation4]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(SUM([Sell Price]), -24, 0)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='datetime' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Sell Price]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Weekly Moving Average]' role='measure' type='quantitative' />
+      <column caption='BOOSTER_COOKIE_prices.csv' datatype='table' name='[__tableau_internal_object_id__].[BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sell Price]' derivation='Sum' name='[diff:sum:Sell Price:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Sell Price]' derivation='Sum' name='[sum:Sell Price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Weekly Moving Average]' derivation='Sum' name='[sum:Weekly Moving Average:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation2]' derivation='User' name='[usr:Calculation2:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[none:Date:qk]' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Calculation2]' derivation='User' name='[usr:Calculation2:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' />
+      </column-instance>
+      <column-instance column='[Calculation2]' derivation='User' name='[usr:Calculation2:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='' ordering-type='Field' />
+      </column-instance>
+      <column-instance column='[Calculation2]' derivation='User' name='[usr:Calculation2:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation3]' derivation='User' name='[usr:Calculation3:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Calculation4]' derivation='User' name='[usr:Calculation4:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[Sell Price]' derivation='Sum' name='[win:sum:Sell Price:qk:10]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-20' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[Sell Price]' derivation='Sum' name='[win:sum:Sell Price:qk:12]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-24' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[Sell Price]' derivation='Sum' name='[win:sum:Sell Price:qk:2]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-168' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[Sell Price]' derivation='Sum' name='[win:sum:Sell Price:qk:4]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[Sell Price]' derivation='Sum' name='[win:sum:Sell Price:qk:6]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' from='-5' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[Sell Price]' derivation='Sum' name='[win:sum:Sell Price:qk:8]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-5' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <column-instance column='[Sell Price]' derivation='Sum' name='[win:sum:Sell Price:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Avg' from='-2' ordering-type='Rows' to='0' type='WindowTotal' window-options='IncludeCurrent' />
+      </column-instance>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Mash/AppData/Local/Temp/TableauTemp/#TableauTemp_07jiuii1gepjae1dio8j40wadb10.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/17/2025 07:45:11 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>BOOSTER_COOKIE_prices.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>550</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sell Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sell Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sell Price</remote-alias>
+              <ordinal>1</ordinal>
+              <family>BOOSTER_COOKIE_prices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>539</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weekly Moving Average</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Weekly Moving Average]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weekly Moving Average</remote-alias>
+              <ordinal>2</ordinal>
+              <family>BOOSTER_COOKIE_prices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>549</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[diff:sum:Sell Price:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[sum:Sell Price:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[win:sum:Sell Price:qk:10]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[win:sum:Sell Price:qk:12]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[win:sum:Sell Price:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[win:sum:Sell Price:qk:4]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[win:sum:Sell Price:qk:6]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[win:sum:Sell Price:qk:8]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[win:sum:Sell Price:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[__tableau_internal_object_id__].[cnt:BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[sum:Sell Price:qk]:1&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[usr:Calculation1:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[usr:Calculation2:qk:1]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[usr:Calculation2:qk:2]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[usr:Calculation2:qk:3]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[usr:Calculation2:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[usr:Calculation3:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[usr:Calculation4:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[sum:Weekly Moving Average:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='BOOSTER_COOKIE_prices.csv' id='BOOSTER_COOKIE_prices.csv_136FA0C6E4F2473785EBEBCA242282DC'>
+            <properties context=''>
+              <relation connection='textscan.193va9i0feuqfr1dsb5kw1qi9kmw' name='BOOSTER_COOKIE_prices.csv' table='[BOOSTER_COOKIE_prices#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='datetime' name='Date' ordinal='0' />
+                  <column datatype='real' name='Sell Price' ordinal='1' />
+                  <column datatype='real' name='Weekly Moving Average' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sell Price vs Moving AVG(Booster Cookie)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='BOOSTER_COOKIE_prices' name='federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88'>
+            <column caption='SMA1WEEK' datatype='real' name='[Calculation1]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([Sell Price]), -168, 0)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='SMA1DAY' datatype='real' name='[Calculation4]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='WINDOW_AVG(SUM([Sell Price]), -24, 0)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='datetime' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Sell Price]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Sell Price]' derivation='Sum' name='[sum:Sell Price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation1]' derivation='User' name='[usr:Calculation1:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+            <column-instance column='[Calculation4]' derivation='User' name='[usr:Calculation4:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[usr:Calculation4:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[usr:Calculation1:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[sum:Sell Price:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[none:Date:qk]' field-type='quantitative' max='#2025-10-09 08:49:55.959#' min='#2025-09-23 19:48:31.298#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[Multiple Values]' field-type='quantitative' max='15225455.945732504' min='7450844.4604647737' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='17' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[Multiple Values]</rows>
+        <cols>[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[none:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{926770F9-E927-4D56-A173-96575C7A9E4F}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='17' param='[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[:Measure Names]</field>
+            <field>[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[none:Date:qk]</field>
+            <field>[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[usr:Calculation3:qk]</field>
+            <field>[federated.0lzpm7l1jwdwfy1g6u7fx0nz1s88].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{64390B17-76BF-4CDB-A3D1-ADD06949983B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
