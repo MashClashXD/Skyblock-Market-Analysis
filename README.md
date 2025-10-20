@@ -19,7 +19,7 @@ A comprehensive Tableau dashboard was created with the following features:
 - **Adjustable Moving Average Periods:** Allows analysis of trends over different timeframes.
 - **Profit Simulation:** Visualizes potential buy/sell times and estimates profits based on selected parameters and indicates how many items would need to be sold.
 
-![Dashboard](img/dashboard.png)
+![Dashboard](img/Dashboard.jpg)
 
 ## Conclusion
 Early testing indicates that the dashboard can effectively identify opportunities to generate passive income from the Bazaar. The main limitation is the lack of an automated algorithm for selecting items, requiring users to manually identify those with the highest trading potential (this may be added in the future).
