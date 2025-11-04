@@ -18,6 +18,7 @@ A comprehensive Tableau dashboard was created with the following features:
 - **Customizable Buy/Sell Indicators:** Users can adjust percentage margins applied to the moving average to define buy and sell signals.
 - **Adjustable Moving Average Periods:** Allows analysis of trends over different timeframes.
 - **Profit Simulation:** Visualizes potential buy/sell times and estimates profits based on selected parameters and indicates how many items would need to be sold.
+- [**Dashboard Showcase**](https://public.tableau.com/views/FOREST_ESSENCE/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ![Dashboard](img/Dashboard.jpg)
 
